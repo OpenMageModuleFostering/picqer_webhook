@@ -7,7 +7,7 @@
     </modules>
     <global>
         <events>
-            <sales_order_save_after>
+            <sales_order_save_commit_after>
                 <observers>
                     <!-- Send a webhook to Picqer if order has correct status -->
                     <picqer_send_order_webhook>
@@ -15,7 +15,7 @@
                         <method>sendWebhook</method>
                     </picqer_send_order_webhook>
                 </observers>
-            </sales_order_save_after>
+            </sales_order_save_commit_after>
         </events>
         <helpers>
             <picqer_webhook>
